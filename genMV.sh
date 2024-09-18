@@ -30,9 +30,10 @@ for i in $(seq 1 $num_vms); do
     }
 
     delete_vm() {
-        echo "Deleting VM: $VM_NAME"
-        VBoxManage unregistervm $VM_NAME --delete
-        echo "VM $VM_NAME deleted successfully!"
+        read -p "Entrez le nom de la VM a supprimer : " VM_Delete
+        echo "Deleting VM: $VM_Delete"
+        VBoxManage unregistervm $VM_Delete --delete
+        echo "VM $VM_Delete deleted successfully!"
     }
 
     list_vms() {
@@ -40,13 +41,15 @@ for i in $(seq 1 $num_vms); do
     }
 
     start_vm() {
-        echo "Starting VM: $VM_NAME"
-        VBoxManage startvm $VM_NAME --type headless
+        read -p "Entrez le nom de la VM a démarrer : " VM_Start
+        echo "Starting VM: $VM_Start"
+        VBoxManage startvm $VM_Start --type headless
     }
 
     stop_vm() {
-        echo "Stopping VM: $VM_NAME"
-        VBoxManage controlvm $VM_NAME acpipowerbutton
+        read -p "Entrez le nom de la VM a stopper : " VM_Stop
+        echo "Stopping VM: $VM_Stop"
+        VBoxManage controlvm $VM_Stop acpipowerbutton
     }
 
     # Main Script
