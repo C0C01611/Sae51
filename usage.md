@@ -4,11 +4,9 @@
 
 ## Auteurs
 
-- **Nom 1** : [Morgan]
+- **Nom 1** : Morgan
 
-- **Nom 2** : [Corentin]
-
-- **Date** : [Date du jour]
+- **Nom 2** : Corentin
 
 
 ## Résumé
@@ -42,3 +40,10 @@ répertoire de votre choix.
    ```bash
 
    chmod +x genMV.sh
+
+## Utilisation 
+1. Taper ./genMV.sh N pour créer une VM
+2. S pour supprimer une VM
+3. D pour démarrer une VM
+4. A pour arreter une VM
+5. L pour lister les VM
