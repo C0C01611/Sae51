@@ -42,8 +42,8 @@ répertoire de votre choix.
    chmod +x genMV.sh
 
 ## Utilisation 
-1. Taper ./genMV.sh N pour créer une VM
-2. S pour supprimer une VM
-3. D pour démarrer une VM
-4. A pour arreter une VM
-5. L pour lister les VM
+1. Taper './genMV.sh N' pour créer une VM
+2. './genMV.sh S' pour supprimer une VM
+3. './genMV.sh D' pour démarrer une VM
+4. './genMV.sh A' pour arreter une VM
+5. './genMV.sh L' pour lister les VM
