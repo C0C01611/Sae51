@@ -59,7 +59,7 @@ for i in $(seq 1 $num_vms); do
         L) list_vms ;;
         D) start_vm ;;
         A) stop_vm ;;
-        *) echo "Invalid option. Use N (New), S (Delete), L (List), D (Start), A (Stop)" ;;
+        *) echo "Invalid option. Use N (Nouvelle), S (Supprimer), L (Liste), D (Demarrer), A (Arreter)" ;;
     esac
 
 done
